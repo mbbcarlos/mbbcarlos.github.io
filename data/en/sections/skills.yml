@@ -11,20 +11,25 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: React
+- name: Unreal Engine 4
   icon: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+  summary: "Game engine used during the development of my thesis project"
+
+  url: "https://react-bootstrap.github.io"
+- name: React-Bootstrap
+  icon: "/images/sections/skills/kubernetes.png"
+  summary: "Used React.js with ReactBootstrap to build interactive and responsive UIs, both for academic, professional and hobby projects."
+  url: "https://react-bootstrap.github.io"
 
 - name: Kotlin
   icon: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+  summary: "Used as the main language for academic development of servers"
+  url: "https://kotlinlang.org"
 
-- name: Python
+- name: Python Flask
   icon: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Used to develop a server to hold forest wildfire information and manipulate its' geographic (SIG) information"
 
 - name: Java
   icon: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Used mostly in academic projects."

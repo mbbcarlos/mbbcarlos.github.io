@@ -14,13 +14,15 @@ experiences:
     name: NOVA-LINCS @ NOVA SST
     url: "https://nova-lincs.di.fct.unl.pt"
     location: Monte da Caparica, Portugal
-    overview: An unit of the national Science & Technology network in the area of Computer Science and Engineering
+    overview: Master Thesis Project with NOVA-LINCS scholarship
   positions:
     - designation: Student Researcher (Master Thesis)
       start: March 2020
       #end: Janurary 2020
-      responsibilities:
-      - To describe
+      # responsibilities:
+      # - Main goal is to integrate naturally dynamic ever-changing data into a virtual reality worl, using the game engine Unreal Engine 4
+      # - Develop mechanisms/tools to prepare this data, model and re-struct so it can be easily interperted by the game and spawn it in the virtual world
+      # - Since dynamic data is such a vast term, in the thesis we had a special focus on forest fire data (fire fronts, burnt/burning areas and weather)
 - company:
     name: DI @ NOVA SST
     url: "https://www.di.fct.unl.pt"
@@ -31,9 +33,9 @@ experiences:
       start: Oct 2019
       end: Janurary 2020
       responsibilities:
-      - Teaching non-computer science students the base and basics of coding
-      - Python
-      - Ability to communicate and describe clearly OOP concepts to students
+      # - Teaching non-computer science students the base and basics of coding
+      # - Python
+      # - Ability to communicate and describe clearly OOP concepts to students
 
 - company:
     name: Núcleo de Informática NOVA SST
@@ -59,15 +61,15 @@ experiences:
     url: "https://www.fct.unl.pt/en"
     location: Monte da Caparica, Portugal
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: Discovering and developming the basics of how to integrate (in the most automatized way found) of SIG data into a Virtual Reality world, using a game engine, namely, using Unreal Engine 4
   positions:
   - designation: Researcher
     start: Feb 2018
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     end: Jul 2018
     # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Development of a Virtual Reality World based on georreferenced data
-    - Worked with the game engine UE4
-    - Direct contact with supervisors
-    - First contact with the academia/scientifc research world
+    # responsibilities:
+    # - 
+    # - Worked with the game engine UE4
+    # - Direct contact with supervisors
+    # - First contact with the academia/scientifc research world
