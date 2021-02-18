@@ -1,0 +1,73 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: NOVA-LINCS @ NOVA SST
+    url: "https://nova-lincs.di.fct.unl.pt"
+    location: Monte da Caparica, Portugal
+    overview: An unit of the national Science & Technology network in the area of Computer Science and Engineering
+  positions:
+    - designation: Student Researcher (Master Thesis)
+      start: March 2020
+      #end: Janurary 2020
+      responsibilities:
+      - To describe
+- company:
+    name: DI @ NOVA SST
+    url: "https://www.di.fct.unl.pt"
+    location: Monte da Caparica, Portugal
+    overview: The Department of Computer Science @ NOVA SST offers its' Master students the possibility of teaching one classe (of the first three years). I applied to this scholarship the first semester of 2019/2020 and got the opportunity to taught "Introdução à Programação B".
+  positions:
+    - designation: 
+      start: Oct 2019
+      end: Janurary 2020
+      responsibilities:
+      - Teaching non-computer science students the base and basics of coding
+      - Python
+      - Ability to communicate and describe clearly OOP concepts to students
+
+- company:
+    name: Núcleo de Informática NOVA SST
+    url: "https://ninf-fct.org"
+    location: Monte da Caparica, Portugal
+    overview: TODO
+  positions:
+    - designation: Vice-President
+      start: March 2019
+      end: June 2019
+      responsibilities:
+      - My leadership and sense of responsibility were put to the test and vastly improved
+      - Direct contact with PR representatives from different companies
+      - Part of the leardership and management of a student Hackathon (Hackathon FCT NOVA 2019)
+    - designation: Treasurer
+      start: June 2018
+      end: June 2019
+      responsibilities:
+      - First time being in a position of an administrative team (of a student club)
+      - Part of the leardership and management of a student Hackathon (Hackathon FCT NOVA 2019)
+- company:
+    name: NOVA SST
+    url: "https://www.fct.unl.pt/en"
+    location: Monte da Caparica, Portugal
+    # company overview
+    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+  positions:
+  - designation: Researcher
+    start: Feb 2018
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Jul 2018
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Development of a Virtual Reality World based on georreferenced data
+    - Worked with the game engine UE4
+    - Direct contact with supervisors
+    - First contact with the academia/scientifc research world
