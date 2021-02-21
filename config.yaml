@@ -23,7 +23,7 @@ enableEmoji: true
 
 # Site parameters
 params:
-  background: "images/my-bg.jpg"
+  background: "images/bg-2.jpg"
   # GitHub repo URL of your site
   gitRepo: https://github.com/mbbcarlos/mbbcarlos.github.io
 
