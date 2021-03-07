@@ -1,3 +1,3 @@
 ---
-title: Random Posts
+title: Posts
 ---  
