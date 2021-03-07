@@ -18,7 +18,7 @@ company:
 resume: "files/Marta-Carlos-resume.pdf"
 
 # a summary about you
-summary: 'TODO'
+summary: 'A computer science student with recent interest in video game developing'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -41,5 +41,8 @@ softSkills:
   percentage: 80
   color: blue
 - name: Team Work
-  percentage: 90
+  percentage: 80
   color: green
+- name: Hard Working
+  percentage: 90
+  color: pink
