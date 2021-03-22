@@ -1,7 +1,7 @@
 ---
 title: "World Composition: Level loading/unloading"
 date: 2021-03-07T06:00:23+06:00
-hero: hero.jpg
+hero: /images/posts/ue4-logo.jpg
 description: How to know what and when levels are being loaded and unloaded
 menu:
   sidebar:

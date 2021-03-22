@@ -1,7 +1,7 @@
 ---
 title: "UE4 Showcase: Light"
 date: 2021-03-07T06:00:23+06:00
-hero: hero.jpg
+hero: /images/posts/ue4-logo.jpg
 description: Sunsky light difference showcase
 menu:
   sidebar:

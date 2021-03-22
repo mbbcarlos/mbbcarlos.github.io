@@ -24,6 +24,7 @@ markup:
 
 # Enable global emoji support
 enableEmoji: true
+
 googleAnalytics: G-VQKYPD22NR
 # Site parameters
 params:
