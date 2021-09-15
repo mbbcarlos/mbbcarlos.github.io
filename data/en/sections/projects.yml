@@ -21,7 +21,7 @@ buttons:
 
 # your projects
 projects:
-- name: Gram
+- name: STEMGram
   # logo: /images/sections/projects/kubernetes.png
   role: Developer
   timeline: "Nov 2020 - Present"
@@ -38,6 +38,17 @@ projects:
   #url: ""
   summary: To integrate the ever-changing dynamic data of a forest wildfire into a virtual reality world built on Unreal Engine 4. Master thesis project.
   tags: ["academic"]
+
+
+- name: More Projects
+  logo: /images/sections/projects/tensorflow.png
+  role: Developer
+  timeline: "Infinity - Infinity"
+  # repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: More projects to be added soon!
+  tags: ["hobby"]
+
 
 # - name: Nocode
 #   logo: /images/sections/projects/no-code.png

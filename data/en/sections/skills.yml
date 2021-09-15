@@ -15,7 +15,10 @@ skills:
   icon: "/images/sections/skills/kubernetes.png"
   summary: "Game engine used during the development of my thesis project"
 
-  url: "https://react-bootstrap.github.io"
+- name: Flutter
+  icon: "/images/sections/skills/kubernetes.png"
+  summary: "Currently taking an Udemy course on Flutter, my first experience with mobile development"
+
 - name: React-Bootstrap
   icon: "/images/sections/skills/kubernetes.png"
   summary: "Used React.js with ReactBootstrap to build interactive and responsive UIs, both for academic, professional and hobby projects."
@@ -33,3 +36,7 @@ skills:
 - name: Java
   icon: "/images/sections/skills/cloud.png"
   summary: "Used mostly in academic projects."
+
+- name: Adobe Photoshop, Illustrator and Premier
+  icon: "/images/sections/skills/kubernetes.png"
+  summary: "Since I was around 12 years old I liked to play around with photo and video editing, and even though I don't spend the same ours on it, it's always a hobby I'd like to get better at"

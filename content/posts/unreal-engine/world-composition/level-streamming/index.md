@@ -25,7 +25,7 @@ To put it bluntly, World Composition is a system designed by Epic to manage larg
 With World Composition, you can achieve many great things regarding large areas, e.g., if you have a large heightmap, you can divide into **tiles** and upload them directly using World Composition - you only have to make sure the names are something like <mark>TileName_X0_Y0</mark>, <mark>TileName_X0_Y1</mark> and so on.
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/tiled_heightmap_import.webp"  align="center"  title="Import Tiled Landscape by Epic Games" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/tiled_heightmap_import.webp"  align="center"  title="Import Tiled Landscape by Epic Games" >}}
 
 {{< vs 3 >}}
 
@@ -61,7 +61,7 @@ Now, we just have a small thing to remember: with levels names, we have access t
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/levels-events.png"  align="center"  title="Event Dispatchers related to level streaming" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/levels-events.png"  align="center"  title="Event Dispatchers related to level streaming" >}}
 
 {{< vs 3 >}}
 
@@ -71,15 +71,15 @@ Naturally, the first thing we need to implement is for each tile the component's
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/bind-to-levels.png"  align="center"  title="Binding to levels" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/bind-to-levels.png"  align="center"  title="Binding to levels" >}}
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/bind-to-level-load.png"  align="center"  title="Binding to level load" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/bind-to-level-load.png"  align="center"  title="Binding to level load" >}}
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/bind-to-level-unload.png"  align="center"  title="Binding to level unload" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/bind-to-level-unload.png"  align="center"  title="Binding to level unload" >}}
 
 {{< vs 3 >}}
 
@@ -87,7 +87,7 @@ Additionally, we will also implement another function that receives a singular l
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/add-level.png"  align="center"  title="Adding level to list" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/add-level.png"  align="center"  title="Adding level to list" >}}
 
 {{< vs 3 >}}
 
@@ -95,9 +95,9 @@ Now, we will define two event dispatchers, one to notify the "owner" that a cert
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/event-dispatchers.png"  align="center"  title="The event dispatchers" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/event-dispatchers.png"  align="center"  title="The event dispatchers" >}}
 
-{{<img src="/posts/unreal-engine/world-composition/dispatcher-details.png"  align="center"  title="The event dispatchers" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/dispatcher-details.png"  align="center"  title="The event dispatchers" >}}
 
 {{< vs 3 >}}
 
@@ -108,11 +108,11 @@ Next, what do we do now? We have now bound ourselves to different streaming even
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/on-level-loaded.png"  align="center"  title="On Level Loaded pt. 1" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/on-level-loaded.png"  align="center"  title="On Level Loaded pt. 1" >}}
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/on-level-loaded-2.png"  align="center"  title="On Level Loaded pt. 2" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/on-level-loaded-2.png"  align="center"  title="On Level Loaded pt. 2" >}}
 
 {{< vs 3 >}}
 
@@ -121,11 +121,11 @@ Now, we basically apply the same logic to **OnLevelUnloaded**
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/on-level-unloaded.png"  align="center"  title="On Level UnLoaded pt. 1" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/on-level-unloaded.png"  align="center"  title="On Level UnLoaded pt. 1" >}}
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/on-level-unloaded-2.png"  align="center"  title="On Level UnLoaded pt. 2" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/on-level-unloaded-2.png"  align="center"  title="On Level UnLoaded pt. 2" >}}
 
 {{< vs 3 >}}
 
@@ -133,7 +133,7 @@ Now, all that's left to do is call the component's binding functions and bind to
 
 {{< vs 3 >}}
 
-{{<img src="/posts/unreal-engine/world-composition/owner-binds.png"  align="center"  title="Owner calls binds" >}}
+{{<img src="content/posts/unreal-engine/world-composition/level-streamming/owner-binds.png"  align="center"  title="Owner calls binds" >}}
 
 {{< vs 3 >}}
 
