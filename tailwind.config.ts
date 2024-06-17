@@ -10,12 +10,19 @@ const config: Config = {
   theme: {
     colors: {
       primary: {
-        DEFAULT: '#f0b4d7'
+        DEFAULT: '#CCA894'
+      },
+      complementary: {
+        DEFAULT: '#F89C95'
+      },
+      dark: {
+        DEFAULT:'#60371C'
       },
       white: colors.white,
       blue: colors.blue,
       pink: colors.pink,
-      purple: colors.purple
+      purple: colors.purple,
+      indigo: colors.indigo
       
     },
     extend: {
