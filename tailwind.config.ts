@@ -13,7 +13,7 @@ const config: Config = {
         DEFAULT: '#CCA894'
       },
       complementary: {
-        DEFAULT: '#F89C95'
+        DEFAULT: '#60371C'
       },
       dark: {
         DEFAULT:'#60371C'
