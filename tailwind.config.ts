@@ -18,6 +18,11 @@ const config: Config = {
       dark: {
         DEFAULT:'#60371C'
       },
+      accent: {
+        DEFAULT: '#880f0c',
+        dark: '#ff878b'
+      },
+      
       white: colors.white,
       blue: colors.blue,
       pink: colors.pink,
