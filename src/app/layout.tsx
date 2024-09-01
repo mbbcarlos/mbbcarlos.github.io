@@ -21,10 +21,10 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="flex flex-col w-screen h-screen items-center justify-between p-4 md:p-12 gap-2 bg-primary text-dark dark:bg-complementary dark:text-primary">
+      <body>
+        <main className=" p-4 md:p-12 gap-2 bg-primary text-dark dark:bg-complementary dark:text-primary">
           {children}
-          <footer className="flex flex-row w-full uppercase  font-sans  justify-center">
+          <footer className=" w-full uppercase text-center font-sans">
             <small>© 2024 - All Rights Reserved</small>
           </footer>
         </main>

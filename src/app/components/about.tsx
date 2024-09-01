@@ -1,4 +1,4 @@
-import Section from './section'
+import Section from './card'
 import Link from 'next/link'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 
@@ -8,7 +8,7 @@ export default function About({ }) {
  
   return (
     <div id={"about"}>
-      <Section sectionData={{
+      <Section cardData={{
          id: "about",
          title: "ABOUT ME",
          imageURL: "/images/hello.gif"
@@ -18,14 +18,6 @@ export default function About({ }) {
 
         <p>On the side I like to draw and video editing, or anything that sparks my creativity</p>
 
-        <div className={'flex'}>
-          <Link href="https://www.linkedin.com/in/marta-carlos/">
-            <button className={"flex justify-center items-center "}><BsLinkedin className={""}/> LinkedIn</button>
-          </Link>
-          <Link href="https://github.com/mbbcarlos">
-            <button className={"flex justify-center items-center"}><BsGithub className={""}/> Github</button>
-          </Link>
-        </div>
       </Section>
     </div>
   )

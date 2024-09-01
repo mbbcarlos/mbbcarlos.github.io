@@ -1,17 +1,18 @@
 'use client'
-import Image from "next/image";
 import About from "./components/about";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 import Typewriter from 'typewriter-effect';
+import Card from "./components/card";
 
 export default function Home() {
   
 
   return (
-    <div className="w-full h-full flex flex-col sm:flex-row  border-2 border-dark dark:border-primary overflow-auto">
-      <main className="flex flex-col md:flex-row items-center  max-h-screen w-full h-full  justify-center md:justify-between p-2 md:p-8 ">
+    <>
+    <div className="-mt-4 md:-mt-12 h-screen items-center flex">
+      <div className="h-fit border-2 border-dark dark:border-primary flex flex-col md:flex-row items-center w-full justify-center md:justify-between p-2 md:p-8 ">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col items-center">
             <div className="flex w-full flex-col my-6 md:my-4 items-center md:items-start">
@@ -61,15 +62,48 @@ export default function Home() {
                 style={{
                   width: "100%",
                   height: "auto",
-                }}
-            
-              
+                }}            
             />
-            </div>
+        </div>
 
-        
-        
-      </main>
+      </div>
+    
     </div>
+    <div className="flex flex-row items-center justify-center md:justify-between my-8">
+        <div className="flex flex-col md:flex-row gap-12 w-full overflow-auto py-2 justify-between">
+          <Card cardData={{
+              id: "rothctm",
+              title: "ROT@HCTM",
+              techStack: ['next', 'python'],
+              link:"https://rothstm.pt/",
+              thumbnail:  "/images/rotstem.png"
+            }}>
+              <div className="flex h-full flex-col justify-between">
+                <p>A website that allows you to explore the history of Portugal's most important science, technology and medicine institutions.</p>
+                <small>@ CIUHCT Copyrights reserved</small>
+              </div>
+            </Card>
+            <Card cardData={{
+              id: "stemgram",
+              title: "StemGram",
+              techStack: ['react', 'node'],
+              link:"https://stemgram.pt/",
+              thumbnail:  "/images/stemgram.png"
+            }}>
+              <div className="flex h-full flex-col justify-between">
+                <p>A website filled with photography and the construction of technological and scientific landscapes in Portugal (1850-1914)</p>
+
+                <small>@ CIUHCT Copyrights reserved</small>
+              </div>
+              
+
+              
+            </Card>
+            
+        </div>
+       
+
+      </div>
+     </>
   );
 }
