@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="w-full h-full flex flex-col sm:flex-row  border-2 border-dark dark:border-primary overflow-auto">
-      <main className="flex flex-col md:flex-row items-center  max-h-screen w-full h-full  justify-between p-2 md:p-8 ">
+      <main className="flex flex-col md:flex-row items-center  max-h-screen w-full h-full  justify-center md:justify-between p-2 md:p-8 ">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col items-center">
             <div className="flex w-full flex-col my-6 md:my-4 items-center md:items-start">
@@ -54,17 +54,16 @@ export default function Home() {
           
         </div>
         <div className="flex flex-col h-min max-h-[55%] md:max-h-none justify-center md:justify-end shrink">
-            <Image
+            <img
               src="/images/profile.png"
               alt="ProfileImage"
-              className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] object-scale-down max-h-full"
+              className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] object-scale-down max-h-[300px] md:max-h-[800px]"
                 style={{
                   width: "100%",
                   height: "auto",
                 }}
-              width={500}
-              height={500}
-              priority
+            
+              
             />
             </div>
 
