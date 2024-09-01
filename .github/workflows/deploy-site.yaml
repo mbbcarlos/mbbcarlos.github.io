@@ -7,7 +7,7 @@ on:
     branches:
     - source
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -26,26 +26,16 @@ jobs:
       - name: 📦 Instal packages
         run: npm install
 
-      - name: ⚙️Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-
       - name: 🏗️ Build 
-        run: npx next build
+        run: |
+         npm run build
+         ls
+         
 
       - name: 🚀 Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
-
-      # push the generated content into the `main` (former `master`) branch.
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main # if your main branch is `master` use that here.
-          publish_dir: ./public
+          path: out
 
   deploy:
     environment:

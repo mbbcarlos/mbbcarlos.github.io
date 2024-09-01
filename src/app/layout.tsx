@@ -6,6 +6,12 @@ import "./globals.css";
 import Header from "./components/header";
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Marta Carlos",
+  description: "My own little space!",
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex flex-col text-center md:text-left md:flex-row max-w-5xl w-full justify-between font-mono text-sm text-dark dark:text-primary lg:flex">
               <div className="flex flex-col mr-0 md:mr-8">
                 <p className=" my-2 md:my-5">
-                  A Software Engineer that is always trying to see how she can sprinkle my interest in arts into her work. 
+                  A Software Engineer that is always trying to see how she can sprinkle her interest in arts into her work. 
                   </p>
               </div>
             </div>
