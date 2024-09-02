@@ -2,13 +2,14 @@ import Link from "next/link"
 import { BiLogoTypescript } from "react-icons/bi"
 import { FaNode, FaPython, FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiFlask, SiKotlin, SiUnrealengine } from "react-icons/si";
 
  type CardData = {
   id: string,
   title: string,
   description?: HTMLElement,
   techStack: string[],
-  link: string,
+  link?: string,
   thumbnail: string
  }
 
@@ -17,10 +18,15 @@ import { RiNextjsFill } from "react-icons/ri";
 function getIconList(techStack: string[]) {
   return techStack.map((tech)=> {
     return {
-      'next': <RiNextjsFill className="text-3xl" />,
+      'next': <RiNextjsFill className="text-3xl"/>,
       'python': <FaPython className="text-3xl" />,
       'react': <FaReact className="text-3xl" />,
       'node': <FaNode className="text-3xl" />,
+      'unreal': <SiUnrealengine className="text-3xl"/>,
+      'flask': <SiFlask className="text-3xl"/>,
+      'kotlin': <SiKotlin className="text-3xl"/>
+
+
     }[tech]
     
   });
@@ -30,7 +36,7 @@ function getIconList(techStack: string[]) {
 export default function Card({ cardData, children }: { cardData: CardData, children: React.ReactNode}) {
   return (
   <div id={cardData.id}>
-    <div className="flex flex-col p-3 md:min-w-[600px] h-full justify-between bg-white dark:bg-[#dfe0df] text-dark rounded-lg  w-auto">
+    <div className="flex flex-col p-3 md:min-w-[600px] md:max-w-[800px] h-full justify-between bg-white dark:bg-[#dfe0df] text-dark rounded-lg  w-auto">
         {/** buttons */}
         <div className="flex p-2 gap-1">
           <div className="">
@@ -55,7 +61,7 @@ export default function Card({ cardData, children }: { cardData: CardData, child
           </div>
           <div className={"flex flex-col md:max-w-[40%]"}>
             <div className={""}>
-                <img src={cardData.thumbnail} className="rounded-sm  aspect-square object-center object-cover" alt={""} />
+                <img src={cardData.thumbnail} className="rounded-md  aspect-square object-center object-cover" alt={""} />
             </div>
           </div>
         </div>
@@ -67,11 +73,11 @@ export default function Card({ cardData, children }: { cardData: CardData, child
                 
               </div>
            </div>
-          <Link href={cardData.link} className="underline font-semibold hover:text-accent">
-            
-              See More {">"}
-           
-          </Link>
+           {cardData.link ? 
+            <Link href={cardData.link} className="underline font-semibold hover:text-accent">
+                See More {">"}
+            </Link> : null
+          }
         </div>
     </div>
   </div>

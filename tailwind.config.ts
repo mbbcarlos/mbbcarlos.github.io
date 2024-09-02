@@ -27,11 +27,18 @@ const config: Config = {
       blue: colors.blue,
       pink: colors.pink,
       purple: colors.purple,
-      indigo: colors.indigo
+      indigo: colors.indigo,
+      gray: colors.gray
+
       
     },
     extend: {
-     
+      keyframes: {
+        scale: {
+          '0%, 100%': { transform: 'scale(1.01)' },
+          '50%': { transform: 'scale(0.7)' },
+        }
+      }
     },
   },
   plugins: [],
