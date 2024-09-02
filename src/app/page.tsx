@@ -1,18 +1,18 @@
 'use client'
-import About from "./components/about";
+import Projects from "./sections/projects";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 import Typewriter from 'typewriter-effect';
-import Card from "./components/card";
+import Introduction from "./sections/about";
 
 export default function Home() {
   
 
   return (
     <>
-    <div className="-mt-4 md:-mt-12 h-screen items-center flex">
-      <div className="h-fit border-2 border-dark dark:border-primary flex flex-col md:flex-row items-center w-full justify-center md:justify-between p-2 md:p-8 ">
+      <div className="-mt-4 md:-mt-12 h-screen items-center flex">
+      <div className="h-fit border-2 border-dark dark:border-primary flex flex-col md:flex-row items-center w-full justify-center md:justify-between p-2 md:p-24">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col items-center">
             <div className="flex w-full flex-col my-6 md:my-4 items-center md:items-start">
@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-col text-center md:text-left md:flex-row max-w-5xl w-full justify-between font-mono text-sm text-dark dark:text-primary lg:flex">
               <div className="flex flex-col mr-0 md:mr-8">
                 <p className=" my-2 md:my-5">
-                  A Software Engineer that is always trying to see how she can sprinkle her interest in arts into her work. 
+                  A Software Engineer that is trying to see how she can sprinkle her interest in arts into her work. 
                   </p>
               </div>
             </div>
@@ -68,42 +68,9 @@ export default function Home() {
 
       </div>
     
-    </div>
-    <div className="flex flex-row items-center justify-center md:justify-between my-8">
-        <div className="flex flex-col md:flex-row gap-12 w-full overflow-auto py-2 justify-between">
-          <Card cardData={{
-              id: "rothctm",
-              title: "ROT@HCTM",
-              techStack: ['next', 'python'],
-              link:"https://rothstm.pt/",
-              thumbnail:  "/images/rotstem.png"
-            }}>
-              <div className="flex h-full flex-col justify-between">
-                <p>A website that allows you to explore the history of Portugal's most important science, technology and medicine institutions.</p>
-                <small>@ CIUHCT Copyrights reserved</small>
-              </div>
-            </Card>
-            <Card cardData={{
-              id: "stemgram",
-              title: "StemGram",
-              techStack: ['react', 'node'],
-              link:"https://stemgram.pt/",
-              thumbnail:  "/images/stemgram.png"
-            }}>
-              <div className="flex h-full flex-col justify-between">
-                <p>A website filled with photography and the construction of technological and scientific landscapes in Portugal (1850-1914)</p>
-
-                <small>@ CIUHCT Copyrights reserved</small>
-              </div>
-              
-
-              
-            </Card>
-            
-        </div>
-       
-
       </div>
+      <Introduction/>
+      <Projects/>
      </>
   );
 }
