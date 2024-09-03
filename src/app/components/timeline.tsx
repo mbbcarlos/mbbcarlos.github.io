@@ -30,10 +30,8 @@ export default function Timeline({ }: {}) {
       
           {/* Right Content --> */}
           <div className="grow pt-0.5 pb-8">
-             
-            
             <p className="mt-0.5 text-sm text-gray-400 ">
-                Who knows?
+               🤷🏻‍♀️ Who knows?
             </p>
           </div>
           {/* End Right Content --> */}

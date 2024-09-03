@@ -9,7 +9,7 @@ export default function Introduction({ }) {
     <h1 className="uppercase font-bold text-4xl  ">Introduction</h1>
     <div className="flex flex-row items-center justify-center md:justify-between lg:justify-center ">
 
-      <div className="flex flex-col md:flex-row gap-12 w-full overflow-auto pt-12 pb-2">
+      <div className="flex flex-col md:flex-row gap-12 w-full justify-between overflow-auto scrollbar-hide pt-12 pb-2">
         <div className="flex flex-col p-3 md:min-w-[500px] md:max-w-[33%] h-full justify-between bg-white dark:bg-[#dfe0df] text-dark rounded-lg  w-auto">
           {/** buttons */}
           <div className="flex p-2 gap-1">

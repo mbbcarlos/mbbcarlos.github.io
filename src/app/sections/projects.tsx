@@ -1,16 +1,16 @@
 
 import { CgScrollH } from "react-icons/cg"
 import Card from "../components/card"
-import './projects.css'
+
 
 export default function Projects({ }) {
  
   return (
     <section id='freelance' className="w-full flex flex-col h-fit my-12">
     <h1 className="uppercase font-bold text-4xl  ">Projects</h1>
-    <div className="flex flex-row items-center justify-center md:justify-between lg:justify-center ">
-
-      <div className="flex flex-col md:flex-row gap-12 w-full overflow-x-scroll scrollbar-hide pt-12 pb-2">
+    <CgScrollH className="hidden md:block mt-12 text-4xl animate-pulse"/>
+    <div className="flex flex-row justify-center md:justify-between lg:justify-center">
+      <div className="flex flex-col mt-12 md:mt-0 md:flex-row gap-12 w-full justify-between overflow-x-scroll scrollbar-hide pt-2 pb-2  min-h-none md:min-h-[500px]">
         <Card cardData={{
             id: "rothctm",
             title: "ROT@HCTM",
@@ -41,7 +41,7 @@ export default function Projects({ }) {
           </Card>
           <Card cardData={{
             id: "vrfire",
-            title: "Wilfires in Virtual Reality",
+            title: "Wildfires in VR",
             techStack: ['unreal', 'flask', 'kotlin'],
             thumbnail:  "/images/vr-project.png"
           }}>
@@ -52,11 +52,8 @@ export default function Projects({ }) {
           </Card>
           
       </div>
-
-
-
     </div>
-    <CgScrollH className="text-4xl animate-pulse"/>
+    
   </section>
   )
 }
