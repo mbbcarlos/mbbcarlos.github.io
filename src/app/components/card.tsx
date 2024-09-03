@@ -50,7 +50,7 @@ export default function Card({ cardData, children }: { cardData: CardData, child
         <div className="flex p-2 gap-1 justify-between">
           <div className="flex gap-1">
             <button  onClick={() => setIsOpen(false)}>
-              <span className="bg-[#ff878b] inline-block p-1 rounded-full hover:bg-primary">
+              <span className="bg-accent-dark inline-block p-1 rounded-full hover:bg-primary">
               <MdClose className="text-white" />
               </span>
           
@@ -66,7 +66,7 @@ export default function Card({ cardData, children }: { cardData: CardData, child
               </span>
             </button>
           </div>
-          {isOpen ? <></> : <h2 className="uppercase font-bold text-xl">{cardData.title}</h2>}
+          <h2 className="uppercase font-bold text-xl">{cardData.title}</h2>
         </div>
 
         {/** content */}
@@ -84,7 +84,7 @@ export default function Card({ cardData, children }: { cardData: CardData, child
           {isOpen ?  <>
           <div className={"flex p-2 flex-col md:flex-row gap-4 justify-between"}>
             <div className="flex flex-col ">
-              <h2 className="uppercase font-bold text-xl">{cardData.title}</h2>
+             
               <div className="max-w-72 mt-4 text-md text-justify h-full">
               {children}
               </div>

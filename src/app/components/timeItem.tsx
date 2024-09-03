@@ -34,7 +34,7 @@ type PointData = {
 
 export default function TimePoint({ loc, title, time, current }: PointData) {
     return (
-        <div className={`flex gap-x-3 `}>
+        <div className={`flex gap-x-3 grow`}>
           {/* Icon --> */}
           <div className={`relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-[#ff878b]`}>
               <div className="relative z-10 size-7 flex justify-center items-center">
