@@ -19,7 +19,7 @@ export default function Projects({ }) {
             thumbnail:  "/images/rotstem.png"
           }}>
             <div className="flex h-full flex-col justify-between">
-              <p>A website that allows you to explore the history of Portugal`&apos;`s most important science, technology and medicine institutions. It offers an interactive map experience, immersing the user in the historical context of the historical institutions</p>
+              <p>A website that allows you to explore the history of Portugal&apos;s most important science, technology and medicine institutions. It offers an interactive map experience, immersing the user in the historical context of the historical institutions</p>
               <small>@ CIUHCT Copyrights reserved</small>
             </div>
           </Card>

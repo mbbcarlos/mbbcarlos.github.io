@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link"
 import { useState } from "react";
 import { FaNode, FaPython, FaReact } from "react-icons/fa";
-import { FiMinimize } from "react-icons/fi";
-import { IoMdOpen } from "react-icons/io";
+import { FiMinimize, FiMaximize } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiFlask, SiKotlin, SiUnrealengine } from "react-icons/si";
@@ -49,20 +48,22 @@ export default function Card({ cardData, children }: { cardData: CardData, child
         {/** buttons */}
         <div className="flex p-2 gap-1 justify-between">
           <div className="flex gap-1">
-            <button  onClick={() => setIsOpen(false)}>
-              <span className="bg-accent-dark inline-block p-1 rounded-full hover:bg-primary">
+            <button  onClick={() => setIsOpen(false)} disabled={!isOpen}>
+              <span className={`${isOpen ? 'bg-accent-dark' : 'bg-gray-400'} inline-block p-1 rounded-full hover:disabled:bg-gray-400 hover:bg-primary`}>
               <MdClose className="text-white" />
               </span>
           
             </button>
-            <button  onClick={() => setIsOpen(false)} >
-              <span className="bg-[#d87738] inline-block p-1 rounded-full hover:bg-primary">
-                <FiMinimize className="text-white" />
+            <button  disabled={true}>
+              <span className={`bg-[#d87738] inline-block p-1 rounded-full `}>
+                <FiMinimize className="text-[#d87738]" />
               </span>
             </button>
-            <button onClick={() => setIsOpen(true)} className="pointer-events-auto">
+            <button onClick={() => setIsOpen(!isOpen)} className="pointer-events-auto">
               <span className="bg-accent box inline-block p-1 rounded-full hover:bg-primary">
-                <IoMdOpen className="text-white" />
+                {isOpen ? <FiMinimize className="text-white" /> :
+                <FiMaximize className="text-white" />
+                }
               </span>
             </button>
           </div>
@@ -74,29 +75,28 @@ export default function Card({ cardData, children }: { cardData: CardData, child
           animate={isOpen ? "open" : "closed"}
           variants={{
             open: {
-              opacity: 1,
-              y: 0,
+              
+              y: 30,
               transition: { type: "spring", stiffness: 300, damping: 24 }
             },
-            closed: { opacity: 0, y: 20,transition: { duration: 0.2 } }
+            closed: {  y: 20, transition: { duration: 0.2 } }
           }}
         >
           {isOpen ?  <>
-          <div className={"flex p-2 flex-col md:flex-row gap-4 justify-between"}>
+          <motion.div className={"flex p-2 flex-col md:flex-row gap-4 justify-between"}>
             <div className="flex flex-col ">
-             
-              <div className="max-w-72 mt-4 text-md text-justify h-full">
+              <div className="max-w-72 text-md text-justify h-full">
               {children}
               </div>
             
             </div>
             <div className={"flex flex-col md:max-w-[40%]"}>
-              <div className={""}>
+              <Link href={cardData.link ? cardData.link : ''} className={""}>
                   <img src={cardData.thumbnail} className="rounded-md  aspect-square object-center object-cover" alt={""} />
-              </div>
+              </Link>
             </div>
-          </div>
-          <div className={"flex flex-row justify-between items-end text-sm w-full p-2"}>
+          </motion.div>
+          <motion.div className={"flex flex-row justify-between items-end text-sm w-full p-2 mb-8"}>
             <div>
                 <small>Built with</small>
                 <div className="flex flex-row gap-2" >
@@ -109,8 +109,14 @@ export default function Card({ cardData, children }: { cardData: CardData, child
                   See More {">"}
               </Link> : null
             }
-          </div></>
-          : null}
+          </motion.div></>
+          : 
+          <motion.div className={"flex flex-row justify-between w-full  p-2 mb-8"}>
+               <Link href={cardData.link ? cardData.link : ''} className={"w-full"}>
+                  <img src={cardData.thumbnail} className="rounded-md  aspect-video object-center object-cover h-32 w-full" alt={""} />
+              </Link>
+          </motion.div>
+          }
         </motion.div>
        
     </div>
