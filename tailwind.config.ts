@@ -22,6 +22,10 @@ const config: Config = {
         DEFAULT: '#880f0c',
         dark: '#ff878b'
       },
+      background: {
+        DEFAULT: colors.white,
+        dark: "#240E00"
+      },
       
       white: colors.white,
       blue: colors.blue,
