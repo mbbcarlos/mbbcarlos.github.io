@@ -44,7 +44,7 @@ export default function TimePoint({ loc, title, time, current }: PointData) {
           {/* End Icon --> */}
       
           {/* Right Content --> */}
-          <div className={`grow pt-0.5 pb-8 ${current ? 'animate-pulse' : ''}`}>
+          <div className={`grow pt-0.5 pb-6 ${current ? 'animate-pulse' : ''}`}>
               {/* Heading --> */}
               <div className="">
                   <time className="text-xs font-medium uppercase ">

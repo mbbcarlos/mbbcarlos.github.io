@@ -1,7 +1,7 @@
 import TimePoint from "./timeItem";
 
 
-export default function Timeline({ }: {}) {
+export default function Education({ }: {}) {
   return (
     
     <div className="flex flex-col grow">
@@ -23,19 +23,15 @@ export default function Timeline({ }: {}) {
             {/* End Right Content --> */}
         </div>
         <TimePoint 
-            loc={"OutSystems"}
-            title={"👩🏻‍💻 Software Engineer"} 
-            time={"March 2022 - Now"}
+            loc={"King Sejong Institute @ NOVA FCSH"}
+            title={"🇰🇷 Korean Language and Culture"} 
+            time={"February 2024 - Now"}
             current={true}
             />
         <TimePoint 
-            loc={"Vodafone PT"}
-            title={"☎️ Frontend Web Developer"} 
-            time={"Nov 2021 - March 2022"}/>
-        <TimePoint 
             loc={"NOVA SST"}
-            title={"🎓 Masters Degree in Computer Science"} 
-            time={"2015-2021"}/>
+            title={"🎓 Computer Science and Engineering"} 
+            time={"September 2015 - October 2021"}/>
          <div className="flex gap-x-3">
             {/* Icon --> */}
             <div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px]  ">
@@ -45,13 +41,6 @@ export default function Timeline({ }: {}) {
             </div>
             {/* End Icon --> */}
         
-            {/* Right Content --> */}
-            <div className="grow pt-0.5 pb-8">
-            <p className="mt-0.5 text-sm text-accent ">
-                🐣 Becoming a functional human
-            </p>
-            </div>
-            {/* End Right Content --> */}
         </div>
         
     </div>
