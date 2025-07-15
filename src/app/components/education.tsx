@@ -1,4 +1,4 @@
-import TimePoint from "./timeItem";
+import TimePoint from "./base/timeItem";
 
 
 export default function Education({ }: {}) {

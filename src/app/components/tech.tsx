@@ -19,7 +19,6 @@ function getIconList(techStack: string[]) {
   });
 }
 
-
 export default function Tech({ techStack }: { techStack: string[] }) {
   return (
     <div className="flex flex-row gap-2" >
