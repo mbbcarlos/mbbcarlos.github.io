@@ -1,7 +1,4 @@
-import Card from "../components/base/card";
-import ExpandableItem from "../components/base/expandable";
 import Project from "../components/project";
-import Tag from "../components/tag";
 
 export default function Rotstem() {
   return (
