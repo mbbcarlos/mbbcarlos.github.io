@@ -1,6 +1,5 @@
 'use client';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 import { MdClose } from 'react-icons/md';
 
@@ -20,16 +19,14 @@ export default function Card({
   cardData: CardData;
   children: React.ReactNode;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div id={cardData.id}>
       <div className='flex flex-col p-3 w-[343px] md:w-[1200px] h-fit justify-between bg-white dark:bg-[#dfe0df] text-dark rounded-lg '>
         <div className='flex p-2 gap-1 justify-between  border-b border-gray-200 dark:border-gray-300'>
           <div className='flex gap-1'>
-            <button onClick={() => setIsOpen(false)} disabled={!isOpen}>
+            <button disabled={true}>
               <span
-                className={`${isOpen ? 'bg-accent-dark' : 'bg-gray-400'} inline-block p-1 rounded-full hover:disabled:bg-gray-400 hover:bg-primary`}
+                className={`bg-accent-dark inline-block p-1 rounded-full  `}
               >
                 <MdClose className='text-white' />
               </span>

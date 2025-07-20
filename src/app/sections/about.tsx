@@ -54,13 +54,11 @@ export default function Introduction({}) {
                         Currently working as a Software Engineer @ OutSystems.
                       </p>
                       <p>
-                        More specifically, I&apos;m currently working on
-                        supporting and implementing new features to a low-code
-                        focused mobile ecosystem. Everyday we&apos;re faced with
-                        different challenges: from supporting the new iOS and
-                        Android SDK versions, to figuring out what native
-                        feature customers could leverage next, focusing on
-                        Developer Experience.
+                        More specifically, I&apos;m currently working in a
+                        frontend-focused team responsible for shaping the future
+                        of mobile apps made with OutSystems. My day-to-day
+                        consistes of building reusable, React-based UI
+                        components on top of the Ionic Framework.
                       </p>
                     </div>
                     <div className='flex flex-wrap gap-4'>
